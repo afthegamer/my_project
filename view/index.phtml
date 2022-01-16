@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALACTIC SPACE</title>
+    <script src="https://kit.fontawesome.com/59889471c2.js" crossorigin="anonymous"></script>
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!--style css-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+
+<body id="backgroundBody">
+    <div class="container demo-1">
+        <div id="contenaireBlock">
+            <header id='chocolatine'>
+                <h1 class="main-title">GALACTIC <span class="thin"> SPACE </span><br />
+                    <spam class='taille'>our future is in space and much further again</span>
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <button value="Intro" type="button" id="myBtn">
+                                Intro
+                            </button>
+                        </li>
+                        <li>
+                            <button value="Work" type="button" id="myBtn2">
+                                Work
+                            </button>
+                        </li>
+                        <li>
+                            <button value="About" type="button" id="myBtn3">
+                                About
+                            </button>
+                        </li>
+                        <li>
+                            <button value="Contact" type="button" id="myBtn4">
+                                Contact
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+
+
+
+                <!--<div id="borderMain">-->
+                <!-- Intro -->
+                <article class="hidden" id="Intro">
+                    <div class="hiddenBlock">
+                        <button id="close" value="close">
+                            <i class="fas fa-door-closed"></i>
+                        </button>
+                        <h2 class="major">Intro</h2>
+                        <span class="image main"><img src="img/1.jpg" alt="space" /></span>
+                        <div>
+                            <?= nl2br($donnees1['article_edit'])?>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <!-- Work -->
+                <article class="hidden" id="Work">
+                    <div class="hiddenBlock">
+                        <button id="close2" value="close2">
+                            <i class="fas fa-door-closed"></i>
+                        </button>
+                        <h2 class="major">Work</h2>
+                        <span class="image main"><img src="img/2.jpg" alt="space" /></span>
+                        <div>
+                            <?= nl2br($donnees2['article_edit'])?>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <!-- About -->
+                <article class="hidden" id="About">
+                    <div class="hiddenBlock">
+                        <button id="close3" value="close3">
+                            <i class="fas fa-door-closed"></i>
+                        </button>
+                        <h2 class="major">About</h2>
+                        <span class="image main"><img src="img/3.jpg" alt="space" /></span>
+                        <div>
+                            <?= nl2br($donnees3['article_edit'])?>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <!-- Contact -->
+                <article class="hidden" id="Contact">
+                    <div class="hiddenContact">
+                        <button id="close4" value="close4">
+                            <i class="fas fa-door-closed"></i>
+                        </button>
+                        <h2 class="major">Contact</h2>
+                        <form method="post" action="mail.php">
+                            <div class="fields">
+                                <div>
+                                    <label for="name">*Name :</label>
+                                    <input type="text" name="name" id="name"  />
+                                </div>
+                                <div>
+                                    <label for="email">*Email : </label>
+                                    <input type="text" name="email" id="email"  />
+                                </div>
+                                <div>
+                                    <label for="message">*Message :</label>
+                                    <textarea name="message" id="message" rows="4" ></textarea>
+                                </div>
+                            </div>
+                            <!-- Message erreurs -->
+                            <?php require_once('admin/views/_errors.phtml');?>
+
+                            <ul class="actions">
+                                <li><input type="submit" value="Send Message" class="primary" /></li>
+                                <li><input type="reset" value="Reset" /></li>
+                            </ul>
+                        </form>
+                        <ul class="icons">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </article>
+        </div>
+        </main>
+    </div>
+    </div>
+    <canvas id="mouveStart"></canvas>
+
+
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/TweenLite.min.js"></script>
+    <script type="text/javascript" src="js/EasePack.min.js"></script>
+    <script type="text/javascript" src="js/starting-Star.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

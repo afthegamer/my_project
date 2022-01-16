@@ -1,0 +1,49 @@
+<?php
+// verif_log ();
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galactic Space - Admin Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <!--<link href="../css/main.css" rel="stylesheet">-->
+</head>
+
+<body>
+    <header>
+        <h1>
+            Welcome to the Admin interface
+        </h1>
+    </header>
+    <main>
+        <div>
+            <form action="../article/update_article.php" method="POST">
+                <!--edit page intro-->
+                <h1>Intro</h1>
+                <textarea type="text" name="intro" rows="10" colspan="0"><?php echo $donnees1['article_edit'] ?></textarea>
+                <!--edit page work-->
+
+                <h1>Work</h1>
+                <textarea type="text" name="work"rows="10"><?php echo $donnees2['article_edit'] ?></textarea>
+                <!--edit page about-->
+
+                <h1>About</h1>
+                <textarea type="text" name="about"rows="10"><?php echo $donnees3['article_edit'] ?></textarea>
+                <ul>
+                    <li>
+                        <a href='function/logout.php' class="underlineHover" >logout</a>
+                    </li>
+                    <li>
+                        <input type="submit" value="Submit" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

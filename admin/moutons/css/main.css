@@ -1,0 +1,47 @@
+html, body
+{
+    margin:0px;
+    padding: 0px;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bergerie
+{
+    background-image: url('../img/grass.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+div.mouton
+{
+    position:absolute;
+    transition: all ease;
+}
+
+div.mouton img
+{
+    height:auto;
+}
+
+.hidden
+{
+    display:none;
+}
+
+
+#howMany
+{
+    position:absolute;
+    box-sizing: border-box;
+    top:30%;
+    left:20%;
+    background-color:rgba(255,255,255,0.5);
+    width:60%;
+    height:40%;
+    padding:1em;
+    font-weight: bold;
+    font-size:1.2em;
+}

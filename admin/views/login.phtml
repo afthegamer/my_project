@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GALACTIC SPACE  - Login Admin </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/login.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/59889471c2.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body> 
+
+    <div id="container"  class="wrapper fadeInDown">
+
+        <!-- Login Form -->
+        <form method="POST" action="login.php">
+
+        <!-- Icon -->
+        <div class="fadeIn first big">
+            <i class="far fa-user"></i>
+        </div>
+        <!-- Message errors -->
+        <?php require_once('views/_errors.phtml');?>
+            <h1>login</h1>
+
+            <input type="text" id="login" class="fadeIn second" name="email" placeholder="Email" >
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+
+    </div>
+</body>
+
+</html>

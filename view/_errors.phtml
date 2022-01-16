@@ -1,0 +1,9 @@
+<!--parameter to display the error message-->
+<?php if (isset($errors) && count($errors) > 0) : ?>
+    <div class="alert alert-danger" role="alert">
+      <ul>
+        <?php foreach ($errors as $error) : ?>
+          <li class="erreur"><?= $error; ?></li>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
